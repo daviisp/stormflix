@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  background-color: #151515;
+  min-height: 100vh;
+  color: #fff;
+
+  p {
+    margin: 0; // Por conta do bootstrap, alguns p ficam bugados
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #151515;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #868686;
+  border-radius: 40px;
+}

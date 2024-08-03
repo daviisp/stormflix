@@ -1,0 +1,182 @@
+@import "./colors.module.scss";
+
+.header {
+  background-color: #000;
+}
+.form {
+  border: 1px solid $darkGray;
+  padding: 20px 0px;
+  max-width: 100%;
+}
+
+.formName {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 80%;
+  margin: 20px auto;
+  text-transform: uppercase;
+}
+
+.nameAbbreviation {
+  font-size: 40px;
+  font-weight: 700;
+  min-height: 70px;
+  min-width: 70px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.userName {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.memberTime {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.memberTimeImg {
+  width: 20px;
+}
+
+.memberText {
+  font-size: 14px;
+  color: $lightGray;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.inputFlexDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
+.inputFlex {
+  width: 250px;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 1px solid $darkGray;
+  color: #fff;
+
+  &::placeholder {
+    color: $lightGray;
+  }
+
+  &:focus {
+    box-shadow: none;
+    border-color: $lightRed;
+    color: #fff;
+    background-color: transparent;
+  }
+}
+
+.inputNormalDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.input {
+  @extend .inputFlex;
+  text-transform: lowercase;
+  width: 550px;
+}
+
+.formBtn {
+  border-color: $lightRed;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 6px 20px;
+
+  &:hover {
+    border-color: $darkRed;
+    background-color: transparent;
+    color: $lightGray;
+  }
+}
+
+.title {
+  font-size: 45px;
+  font-weight: 700;
+  padding-bottom: 50px;
+}
+
+.renderForm {
+  display: block;
+  width: 200px;
+  border: 1px solid $darkGray;
+  background-color: transparent;
+  font-weight: 700;
+  margin: 0 auto;
+  padding: 14px 0px;
+
+  &:hover {
+    background-color: transparent;
+    border-color: $lightRed;
+    color: $lightGray;
+  }
+}
+
+.footer {
+  background-color: #000;
+}
+
+@media screen and (max-width: 991px) {
+  .title {
+    text-align: center;
+  }
+
+  .btnColumn {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 797px) {
+  .inputFlexDiv {
+    gap: 20px;
+  }
+
+  .inputNormalDiv input {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 311px) {
+  .title {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .nameAbbreviation {
+    font-size: 30px;
+    min-height: 60px;
+    min-width: 60px;
+  }
+
+  .userName {
+    font-size: 25px;
+  }
+
+  .inputNormalDiv input,
+  .inputFlexDiv input {
+    width: 95%;
+  }
+}

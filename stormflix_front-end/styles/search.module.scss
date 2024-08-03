@@ -1,0 +1,30 @@
+@import "./colors.module.scss";
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.searchResult {
+  flex: 1 0 auto;
+}
+
+.noSearchText {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.footer {
+  background-color: #000;
+}
+
+@media screen and (max-width: 350px) {
+  .searchCardTitle {
+    font-size: 17px;
+  }
+
+  .searchCardDescription {
+    font-size: 15px;
+  }
+}
